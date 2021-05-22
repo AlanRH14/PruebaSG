@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "661899125297",
+    "project_id": "pruebasg-a0e9f",
+    "storage_bucket": "pruebasg-a0e9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661899125297:android:4f674818836ac847a1eb10",
+        "android_client_info": {
+          "package_name": "curso.kotlin.pruebasg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661899125297-p1psdgjn51lg7srvpvg8ma7vobnqer2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVR4c9UkrfvXlLeGyt4Wfn1t36pKqkOMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661899125297-p1psdgjn51lg7srvpvg8ma7vobnqer2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

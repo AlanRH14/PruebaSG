@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PruebaSG</string>
+    <string name="home_title">Inicio</string>
+    <string name="home_api">Rest</string>
+    <string name="home_cloud_firestore">Firestore</string>
+    <string name="home_location_map">Ubicación</string>
+    <string name="home_gallery">Galería</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gallery_message_title">Seleccione una imagen</string>
+    <string name="hint_commentary_photo">Haz un comentario sobre esta foto...</string>
+    <string name="helper_optional">Opcional</string>
+    <string name="content_search_image">Buscar imagen</string>
+    <string name="gallery_message_success">Se subio correctamente a Firebase Storage</string>
+    <string name="btn_upload">Subir a Firebase Storage</string>
+    <string name="btn_clean">Limpiar</string>
+    <string name="post_message_image_fail">No se pudo subir la fotografía.</string>
+    <string name="gallery_message_title_instruction">Presiona el botón para subir a Firebase Storage</string>
+    <string name="message_welcome">Bienvenido</string>
+    <string name="title_menu_logout">Cerrar sesión</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="content_image_menu">Logo</string>
+    <string name="close">cerrar</string>
+    <string name="content_movie_image">Movie image</string>
+</resources>

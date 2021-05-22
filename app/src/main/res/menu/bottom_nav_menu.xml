@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_Api"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home_api"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_cloud_firestore"
+        android:icon="@drawable/ic_cloud_upload"
+        android:title="@string/home_cloud_firestore"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_location_map"
+        android:icon="@drawable/ic_location_on"
+        android:title="@string/home_location_map"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_gallery"
+        android:icon="@drawable/ic_image"
+        android:title="@string/home_gallery"
+        app:showAsAction="never" />
+</menu>
