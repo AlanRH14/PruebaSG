@@ -22,4 +22,9 @@
     <string name="content_image_menu">Logo</string>
     <string name="close">cerrar</string>
     <string name="content_movie_image">Movie image</string>
+    <string name="dialog_message_logout">¿Desea cerrar sesión?</string>
+    <string name="dialog_message_logout_confirm">Confirmar</string>
+    <string name="dialog_message_logout_cancel">Cancelar</string>
+    <string name="logout_success">Hasta pronto...</string>
+    <string name="open">open</string>
 </resources>

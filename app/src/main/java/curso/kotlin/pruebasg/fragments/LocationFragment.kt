@@ -9,40 +9,58 @@ import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import curso.kotlin.pruebasg.R
+import curso.kotlin.pruebasg.databinding.FragmentLocationBinding
 
 class LocationFragment : Fragment(), OnMapReadyCallback {
-    private lateinit var map: GoogleMap
+    private lateinit var binding: FragmentLocationBinding
+    private lateinit var mGoogleMap: GoogleMap
+    private lateinit var mMapView: MapView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_location, container, false)
+    ): View {
+        binding = FragmentLocationBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        createMapFragment()
+
+        createMap()
     }
 
-    private fun createMapFragment() {
+    private fun createMap() {
         val mapFragment =
-            activity!!.supportFragmentManager.findFragmentById(R.id.map) as? SupportMapFragment
+            requireActivity().supportFragmentManager.findFragmentById(R.id.map) as? SupportMapFragment
         mapFragment?.getMapAsync(this)
+
+        mMapView = binding.map
+
+        mMapView.onCreate(null)
+        mMapView.onResume()
+        mMapView.getMapAsync(this)
     }
 
-    override fun onMapReady(googleMap: GoogleMap) {
-        map = googleMap
-        createMarker()
-    }
+    override fun onMapReady(googleMap: GoogleMap?) {
+        MapsInitializer.initialize(context!!)
+        mGoogleMap = googleMap!!
+        googleMap.mapType = GoogleMap.MAP_TYPE_NORMAL
 
-    private fun createMarker() {
-        val favoritePlace = LatLng(28.044195,-16.5363842)
-        map.addMarker(MarkerOptions().position(favoritePlace).title("Prueba"))
-        map.animateCamera(
-            CameraUpdateFactory.newLatLngZoom(favoritePlace, 18f),
-            4000,
-            null
-        )
+        googleMap.apply {
+            uiSettings.isZoomControlsEnabled = false
+            uiSettings.isMyLocationButtonEnabled = true
+
+            val favoritePlace = LatLng(28.044195, -16.5363842)
+            addMarker(MarkerOptions().position(favoritePlace).title("Mi playa favorita!"))
+
+            moveCamera(CameraUpdateFactory.newLatLng(favoritePlace))
+
+            animateCamera(
+                CameraUpdateFactory.newLatLngZoom(favoritePlace, 18f),
+                4000,
+                null
+            )
+        }
     }
 }
