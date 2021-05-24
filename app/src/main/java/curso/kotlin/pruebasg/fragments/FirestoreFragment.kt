@@ -2,12 +2,13 @@ package curso.kotlin.pruebasg.fragments
 
 import android.Manifest
 import android.content.pm.PackageManager
-import android.os.Bundle
-import android.os.Handler
+import android.os.*
+import android.os.health.TimerStat
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Chronometer
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.FusedLocationProviderClient
@@ -45,7 +46,7 @@ class FirestoreFragment : Fragment() {
     }
 
     private fun timer() {
-        Handler().postDelayed({
+        Handler(Looper.getMainLooper()).postDelayed({
             if (time > 0) {
                 time--
                 timer()
