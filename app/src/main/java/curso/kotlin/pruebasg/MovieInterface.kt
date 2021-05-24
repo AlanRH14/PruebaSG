@@ -1,5 +1,6 @@
 package curso.kotlin.pruebasg
 
+import curso.kotlin.pruebasg.models.MovieResponse
 import io.reactivex.Observable
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory

@@ -1,4 +1,4 @@
-package curso.kotlin.pruebasg
+package curso.kotlin.pruebasg.models
 
 import com.google.gson.annotations.SerializedName
 

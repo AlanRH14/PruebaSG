@@ -27,4 +27,6 @@
     <string name="dialog_message_logout_cancel">Cancelar</string>
     <string name="logout_success">Hasta pronto...</string>
     <string name="open">open</string>
+    <string name="btn_location">Subir ubicación</string>
+    <string name="location_title">Se guardara su ubicación en...</string>
 </resources>

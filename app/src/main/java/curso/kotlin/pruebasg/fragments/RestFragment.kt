@@ -1,6 +1,6 @@
 package curso.kotlin.pruebasg.fragments
 
-import MovieAdapter
+import curso.kotlin.pruebasg.adapters.MovieAdapter
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import curso.kotlin.pruebasg.*
 import curso.kotlin.pruebasg.databinding.FragmentRestBinding
+import curso.kotlin.pruebasg.models.MovieList
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
